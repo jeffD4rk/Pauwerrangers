@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* Cor de fundo geral */
+  color: #333; /* Cor do texto geral */
+}
+
+header {
+  background-color: skyblue; /* azul claro */
+  color: #fff;
+  text-align: center;
+  padding: 1%;
+  border: 3%;
+  border: solid black;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+
+.logo { 
+  text-align: center;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+}
+
+nav {
+  text-align: center;
+  margin: 0% 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 7px 10px;
+  margin: 19px;
+  border: 3px solid black; /*  bordas rosa */
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: lightgreen; /* azul claro que eu acho legal */
+  transition: background-color 0.3s ease-in-put;
+}
+
+nav a:hover {
+  background-color: orange; /* Amarelo mais claro */
+  border-color: #pink; /* Amarelo mais claro */
+}
+
+  section video {
+    border: 1%;
+    border: solid black;
+    border-radius: 10px;
+    width: 70%:
+}
+
+
+section img{
+  margin-left: 1%;
+  align-items: center;
+  border: 2px;
+  border: solid black;
+  border-radius: 12%;
+  width: 30%;
+}
+
+
+.section-content {
+  text-align: center;
+  align-items: center;
+  width: 70%;
+  height: 50%;
+  margin: 10px auto;
+  background-color: #fffbf0; /* Amarelo mais claro para as seções */
+  padding: 20px;
+  border: 1px solid #ffcc00; /* Amarelo mais claro */
+  border-radius: 10px;
+  margin-bottom: 1.5%;
+}
