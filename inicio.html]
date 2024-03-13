@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-
-<title>pouer rangers</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+  <title>pouer rangers</title>
   <link rel="stylesheet" href="inicio.css">
 
 </head>
 <header>
-  <img src="Design sem nome.png">
+  <img src="Design sem nome.png"  width="25%">
 
 
 </header>
