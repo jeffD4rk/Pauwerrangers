@@ -19,7 +19,7 @@ header {
   margin-bottom: 2%;
 }
 
-.logo { 
+.logo {
   text-align: center;
   left: 10%;
   transform: translate(-50%, -50%);
@@ -29,27 +29,29 @@ header {
 
 nav {
   text-align: center;
-  margin: 0% 0;
+  margin: 2% ;
 }
 
 nav a {
   text-decoration: none;
   color: black;
-  padding: 7px 10px;
-  margin: 19px;
-  border: 3px solid black; /*  bordas rosa */
-  border-radius: 5px;
+  padding: 0.7% 1%;
+  margin: 1.6%;
+  border: 1%;
+  border: solid black; /*  bordas rosa */
+  border-radius: 5px; /*bordas redondas*/
   cursor: pointer;
   background-color: lightgreen; /* azul claro que eu acho legal */
-  transition: background-color 0.3s ease-in-put;
+  transition: nav a 0.3s ease-in-put;
 }
 
 nav a:hover {
-  background-color: orange; /* Amarelo mais claro */
+  background-color: orange; /* laranja */
   border-color: #pink; /* Amarelo mais claro */
 }
 
   section video {
+    background-color: #ffcc00;
     border: 1%;
     border: solid black;
     border-radius: 10px;
@@ -64,18 +66,68 @@ section img{
   border: solid black;
   border-radius: 12%;
   width: 30%;
+  transition: width 0.3 ease-in;
+}
+
+section img:hover {
+  background-color: lightyellow;
+  text-align: center;
+  margin-left: 1%;
+  align-items: center;
+  transform: scale(140%);
 }
 
 
+section h1{
+  display: block;
+  font-family: cursive;
+  color: orange;
+}
+
+
+
+   section h2{
+     text-align: center;
+    font-style: oblique;
+    color: lightgreen;
+    font-size: 20px;
+  }
+
+
 .section-content {
+  transition:  4.8 ease;
   text-align: center;
-  align-items: center;
+  align-items: left;
   width: 70%;
   height: 50%;
   margin: 10px auto;
   background-color: #fffbf0; /* Amarelo mais claro para as seções */
   padding: 20px;
-  border: 1px solid #ffcc00; /* Amarelo mais claro */
+  border: 0.1%;
+  border: solid #ffcc00; /* Amarelo mais claro */
   border-radius: 10px;
-  margin-bottom: 1.5%;
+  margin-bottom: 2.5%;
+  z-index: 4;
+
 }
+
+footer h2{
+  font-size: 10px;
+  font-family: cursive;
+  background-color:
+
+}
+
+  footer h1{
+    font-size: 20px;
+    color: orange;
+    font-family: cursive;
+  }
+
+  footer{
+    text-align: center;
+    background-color: skyblue;
+    padding: 0.5%;
+    border: 1%;
+    border: solid black;
+  }
