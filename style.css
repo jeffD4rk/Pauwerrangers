@@ -59,12 +59,8 @@
     border: 1%;
     border: solid orange;
     border-radius: 10px;
-    width: auto;
-    max-width: 70%;
-    min-width: 60%;
+    width: 50%;
     text-align: center;
-    max-width: max-content;
-   
 }
 
 
@@ -75,7 +71,7 @@
     border: 2px;
     border: solid orange;
     border-radius: 12%;
-    width: 30%;
+    width: auto;
     transition: width 0.3 ease-in;
 }
 
@@ -85,7 +81,7 @@
     margin-left: 1%;
     border: solid orange;
     align-items: center;
-    transform: scale(140%);
+    transform: scale(1.4);
 }
 
 
@@ -116,10 +112,9 @@
 
 
   .section-content {
-    
     text-align: center;
     align-items: center;
-    width: 70%;
+    width: 80%;
     height: 50%;
     margin: 10px auto;
     background-color: #fffbf0; /* Amarelo mais claro para as seções */
