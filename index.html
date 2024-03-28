@@ -1,152 +1,116 @@
-  body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background-color: #fff; /* Cor de fundo geral */
-    color: #333; /* Cor do texto geral */
-    background: linear-gradient(180deg, #26a0e8 16%, #5fbdf4 20%, #7bcef7 40%, #96defa 60%, #b2effc 90%)
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos P_R</title>
+  <link rel="shortcut icon" type="imagex/png" href="robo1.png">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  header {
-    background-color: #26a0e8; /* azul claro */
-    color: #fff;
-    text-align: center;
-    padding: 2%;
-    border: 3%;
-    margin-bottom: 3%;
-}
-  .logo{
-    min-width: 10%;
-    text-align: center;
-    left: 100%;
-    transform: scae(200%);
-    z-index: 1;
-    width: 40%;
 
-}
+  <header>
+    <img src="logo.png" width="40%" >
+    <nav>
+      <a href="#home" target="_blank"> inico</a>
+      <a href="#section1" target="_blank">projetos</a>
+      <a href="#section2" target="_blank">contato</a>
+      <a href="#section3" target="_blank">quem somos</a>
+    </nav>
+  </header>
+  
+  <body>
 
-  nav {
-    text-align: center;
-    margin: 2% ;
-}
-
-  nav a{
+  <section class="section-content">
+    <div>
+      <div>
+          <h1>led piscando</h1> 
+            <video width="640" height="360" controls>
+            <source src="led 1.mp4" type="video/mp4"><!--videos dos projetos-->
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+      </div>
     
-    transform: scale(1.4);
-    text-decoration: none;
-    color: black;
-    font-family: cursive;
-    padding: 0.6% 1.6%;
-    margin: 2%;
-    border: 1%;
-    border: solid black; 
-    border-radius: 5px; 
-    cursor: pointer;
-    background-color: #b2effc;
-    transition: nav a 0.3s ease-in-put;
-}
+      <div>
+        <p>
+          <figure>
+            <img src="robo1.png" > <!-- fotos dos projetos --></input>
+            <img src="robo1.png">
+            <img src="robo2.png">       
+          </figure>
+            <h1>descrição</h1>
+            <h2>Nesta aula, aprendemos como funciona o LED. Também vimos como fazer uso dos Resistores, e utiliando esses dois componetes fizemos o led piscar usando o arduino. </h2>
+        </p> 
+      </div>
+   </div>
+      
 
-  nav a:hover{
-    background-color: orange;
-    border-color: black;
-    transform: scale(1.2);
-}
+  </section>
 
-  section video {
-    background: radial-gradient( #f93f 0%, lightyellow 100%) ;
-    border: 1%;
-    border: solid orange;
-    border-radius: 10px;
-    width: auto;
-    min-width: 60%;
-    text-align : center;
-    max-width: max-content;
-   
-}
+  <section class="section-content">
+    <h1>semaforo para carros</h2>
+        <video width="640" height="360" controls>
+          <source src="semafaro1.mp4" type="video/mp4"><!--videos dos projetos-->
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
 
+      <p>
+          <img src="robo1.png"> <!-- fotos dos projetos -->
+          <img src="robo2.png">
+          <img src="robo1.png">
+      </p>
 
-  section img{
-    
-    margin-left: 1%;
-    align-items: center;
-    border: 2px;
-    border: solid orange;
-    border-radius: 12%;
-    width: 30%;
-    transition: width 0.3 ease-in;
-}
+      <p>
+        <h1>descrição</h1>
+        <h2>Nesta aula nós usamos os leds e Resistores que nós usamos anteriormente e usamos para fazer um semaforo com os leds alternando, e mudamos o codigo da placa arduino</h2>
+      </p>
+  </section>
 
-  section img:hover {
-    background: radial-gradient( #f93f 0%, lightyellow 100%) ;;
-    text-align: center;
-    margin-left: 1%;
-    border: solid orange;
-    align-items: center;
-    transform: scale(140%);
-}
+  <section class="section-content">
+    <div>
+        <h1>semaforo para pedestres</h1>
+        <video width="640" height="360" controls>
+          <source src="semaforo2.mp4" type="video/mp4"><!--videos dos projetos-->
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
 
+      <p>
+          <img src="robo1.png"> <!-- fotos dos projetos -->
+          <img src="robo2.png">
+          <img src="robo1.png">
+      </p>
 
-  section h1{
-    text-decoration:underline;
-    font-size: 30px;
-    display: block;
-    text-align: center;
-    font-family: cursive;
-    margin-top: 0.5%;
-    color: rgb(255, 133, 3);
-}
-  	
+      <p>
+        <h1>descrição</h1>
+        <h2>descrição</h2>
+      </p>
+    </div>
+  </section>
 
+  <section class="section-content">
+    <h1>construção</h1>
+    <video width="640" height="360" controls>
+      <source src="semafaro1.mp4" type="video/mp4"><!--videos dos projetos-->
+      Seu navegador não suporta o elemento de vídeo.
+    </video>
 
+  <p>
+      <img src="robo1.png"> <!-- fotos dos projetos -->
+      <img src="robo2.png">
+      <img src="robo1.png">
+  </p>
 
-   section h2{ 
-    line-height: 24px;
-    margin-left: 10%;
-    margin-right: 10%;
-    transform: scale(1.1);
-    text-align: center;
-    font-family: Cursive;
-    color: rgb(99, 194, 99);
-    font-size: 20px;
-    
-}
+  <p>
+    <h1>descrição</h1>
+    <h2>em construção</h2>
+  </p>
+</div>
+  </section>
+  <footer>
+    <h1>&copy;<b>  Pauwer Rangers</b></h1>
+    <h2>Projetos de robotica</h2>
+  
+  </footer>
 
-
-  .section-content {
-    
-    text-align: center;
-    align-items: center;
-    width: 70%;
-    height: 50%;
-    margin: 10px auto;
-    background-color: #fffbf0; /* Amarelo mais claro para as seções */
-    padding: 20px;
-    border: 10px;
-    border: solid #ffcc00; /* Amarelo mais claro */
-    border-radius: 10px;
-    margin-bottom: 2.5%;
-    z-index: 4;
-
-}
-
-  footer h2{
-    font-size: 17px;
-    font-family: cursive;
-
-}
-
-  footer h1{
-    font-size: 30px;
-    color: orange;
-    font-family: cursive;
-}
-
-  footer{
-    text-align: center;
-    background-color: rgb(109, 190, 248);
-    padding: 0.5%;
-    border-top: 1%;
-    border-top: solid black;
-}
+</body>
+</html>
