@@ -60,8 +60,9 @@
     border: solid orange;
     border-radius: 10px;
     width: auto;
+    max-width: 70%;
     min-width: 60%;
-    text-align : center;
+    text-align: center;
     max-width: max-content;
    
 }
