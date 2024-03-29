@@ -53,6 +53,7 @@ section img {
 }
 
 section video {
+  background: radial-gradient(orange 0%, lightorange 50%, lightorange 100%);
   border: solid orange;
   border-radius: 10px;
   width: 90%;
