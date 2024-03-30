@@ -1,8 +1,3 @@
-  *{
-    margin: 0%;
-    padding: 0%;
-  }
-  
   body {
     margin: 0;
     padding: 0;
@@ -12,16 +7,15 @@
     background-color: #fff; /* Cor de fundo geral */
     color: #333; /* Cor do texto geral */
     background: linear-gradient(180deg,  #054569 0%,#06679f 16%, #3179a3 20%, #7bcef7 40%, #96defa 60%, #b2effc 90%)
-}
-  
-  .cabecalho {
+  }
 
+  .cabecalho {
     color: #fff;
     text-align: center;
     padding: 2%;
     border: 3%;
     margin-bottom: 3%;
-}
+  }
   .imagem-cabecalho{ 
     text-align: center;
     min-width: 10%;
@@ -30,57 +24,49 @@
     transition: all 0.6s ease;
     z-index: 1;
     width: 40%;
+  }
+  .imagem-cabecalho:hover{ 
+    transform: scale(1.2);
+    text-align: center;
+    min-width: 10%;
+    text-align: center;
+    left: 100%;
+    z-index: 1;
+    width: 40%;
+  }
 
-}
-.imagem-cabecalho:hover{ 
-  transform: scale(1.2);
-  text-align: center;
-  min-width: 10%;
-  text-align: center;
-  left: 100%;
-  z-index: 1;
-  width: 40%;
 
-}
-
-  .item-lista{
+  .item-lista{ /*..so coloca no href da pagina que lea esta */
     text-decoration: line-through;
   }
-
-  .projetos-item{
-    width: 80px;
-    display:;
+  nav {
+    text-align: center;
+    margin-top: 2% ;
   }
 
-nav {
-    
-  text-align: center;
-  margin-top: 2% ;
-}
 
 
-
-nav a{
-  transition: trasnform 0.3s ease;
-  text-align: center;
-  margin: 2% ;
-  transform: scale(1.4);
-  text-decoration: none;
-  color: black;
-  font-family: cursive;
-  padding: 0.6% 1.6%;
-  margin: 2%;
-  border: 1%;
-  border: solid black; 
-  border-radius: 5px; 
-  cursor: pointer;
-  background-color: #b2effc;
-  transition: tranform 0.3s ease;
-}
-nav a:hover{
-  cursor: pointer;
-  background: linear-gradient(90deg, #07c9ff 20%, #47f9f3 90%);
-}
+  nav a{
+    transition: trasnform 0.3s ease;
+    text-align: center;
+    margin: 2% ;
+    transform: scale(1.4);
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+    padding: 0.6% 1.6%;
+    margin: 2%;
+    border: 1%;
+    border: solid black; 
+    border-radius: 5px; 
+    cursor: pointer;
+    background-color: #b2effc;
+    transition: tranform 0.3s ease;
+  }
+  nav a:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, #07c9ff 20%, #47f9f3 90%);
+  }
 
   .lado{
     width: 1000px;
@@ -88,27 +74,25 @@ nav a:hover{
     margin-right: 10px;
     text-align: right;
   }
-  section video {
+  section video{
     background: radial-gradient( #f93f 0%, lightyellow 100%) ;
     border: 1%;
     border: solid orange;
-    border-radius: 16px;
-    width: 50%;
+    border-radius: 10px;
+    width: 60%;
     text-align: center;
-    margin-bottom: 2%;
     transition: all 0.3s ease;
-}
+  }
 
-section video:hover {
-  background: radial-gradient( #f93f 0%, lightyellow 100%) ;
-  border: 1%;
-  border: solid orange;
-  border-radius: 10px;
-  width: 50%;
-  text-align: center;
-  
-  transform: scale(95%);
-}
+  section video:hover{
+    background: radial-gradient( #f93f 0%, lightyellow 100%) ;
+    border: 1%;
+    border: solid orange;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    transform: scale(95%);
+  }
 
 
 
@@ -121,8 +105,7 @@ section video:hover {
     border-radius: 12%;
     width: 30%;
     transition: all 0.4s ease;
-
-}
+  }
 
   section img:hover {
     background: radial-gradient( #f93f 0%, lightyellow 100%);
@@ -132,7 +115,7 @@ section video:hover {
     border: solid orange;
     border-radius: 8%;
     transform: scale(1.2);
-}
+  }
 
 
   section h1{
@@ -143,12 +126,12 @@ section video:hover {
     font-family: cursive;
     margin-top: 0.5%;
     color: rgb(255, 133, 3);
-}
-  	
+  }
+  
 
 
 
-   section h2{ 
+  section h2{ 
     line-height: 24px;
     margin-left: 10%;
     margin-right: 10%;
@@ -157,8 +140,7 @@ section video:hover {
     font-family: Cursive;
     color: rgb(99, 194, 99);
     font-size: 20px;
-    
-}
+  }
 
 
   .imgbg{
@@ -166,10 +148,13 @@ section video:hover {
     opacity: 0.4;
   }
 
+  section{
+    text-align: center;
+  }
+
   .section-content {
     text-align: center;
-    align-items: center;
-    width: 80%;
+    width: 76%;
     height: 50%;
     margin: 10px auto;
     background-color: #fff;
@@ -179,19 +164,19 @@ section video:hover {
     border-radius: 10px;
     margin-bottom: 2.5%;
     z-index: 4;
-
-}
+  }
+  
 
   footer h2{
     color: black;
     font-size: 13px;
     font-family: cursive;
-
-}
+  }
 
   footer h1{
+
     font-size: 25px;
-    color: orange;
+    color: #ffa500;
     font-family: cursive;
     text-decoration: underline ;
   }
@@ -199,8 +184,28 @@ section video:hover {
 
   footer{
     text-align: center;
-    background-color: rgb(109, 190, 248);
+    background-color: #6dbef8;
     padding: 0.5%;
     border-top: 1%;
     border-top: solid black;
-}
+  } 
+
+
+  .icon{
+    margin: 1%;
+    width: 44px;
+    border-radius: 30px;
+    border: 1%;
+    border: solid rgb(255, 255, 255);
+  }
+   
+  .credito{ 
+    margin: 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+ .copy b{
+  color: #ffa500;
+ }
