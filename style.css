@@ -88,6 +88,94 @@
     background:linear-gradient(140deg,#00d9ff 0%, #0084ff 50%,#023390 100%);
   }
 
+.foto-rangers{
+display:grid;
+justify-content:center;
+align-items:center;
+grid-template-columns: 20% 20% 20% 20% 20% 20%;
+justify-self:center;
+text-align:center;
+margin-bottom:1%;
+margin: 2px;
+}
+.foto-rangers1{
+  display:grid;
+  justify-content:center;
+  align-items:center;
+  grid-template-columns: 20% 20% 20% 20% 20% ;
+  justify-self:center;
+  text-align:center;
+  margin-bottom:1%;
+  margin: 2px;
+  }
+
+  .section-local{
+    margin: 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #171414;
+    width: 90%;
+  }
+
+.titulo-contato{
+  margin-top: 3% ;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  font-family: cursive;
+  margin-top: 0.5%;
+  color: rgb(255, 133, 3);
+}
+
+.section-local iframe{
+  text-align: center;
+  border: 1%;
+  border: solid black;
+  margin-bottom: 3%;
+  border-radius: 10px;
+}
+
+.rangers{
+  border: 1.5px solid black;
+  border-radius: 12px;
+  margin: 8%;
+  background-color: #60a7e0;
+  padding: 0 -10px 0 -10px;
+}
+.fotos-rangers{
+  margin-top: 10px;
+  border-bottom: 2px solid black;
+}
+ 
+.rangers .fotos-rangers{
+  background-color:orange;
+  border: 2px solid black;
+  border-radius:90%;
+  width:70%;
+  transition: transform 0.5s ease-in-out;
+  animation: fundo 0.3s infinite;
+  animation-delay: 0.6s;
+  }
+
+
+.nome-rangers{
+  text-align:center;
+  font-size: 15px;
+  margin-top: -2px;
+  color:#171414
+}
+
+.icone{
+  margin-top: -11px;
+  border-radius: 50%;
+  background-color: transparent;
+  width: 45px;
+}
+
+
   .lado{
     width: 1000px;
     position: relative;
