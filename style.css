@@ -9,6 +9,7 @@
   }
 
   body {
+    text-align: center;
     background: linear-gradient(180deg, #190349, #04b7f6);/*degrade de cor*/
   }
 
@@ -138,6 +139,9 @@ margin: 2px;
   border-radius: 10px;
 }
 
+h2{
+  color: #000000;
+}
 .rangers{
   border: 1.5px solid black;
   border-radius: 12px;
@@ -196,6 +200,21 @@ margin: 2px;
     border-radius: 10px;
     margin-bottom: 2.5%;
     z-index: 4;
+  }
+
+  .section-content-contato {
+    text-align: center;
+    width: 90%;
+    height: 20%;
+    margin: 10px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 10px;
+    border: solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 2.5%;
+    z-index: 4;
+    color: #000000;
   }
 
   section video{
@@ -296,7 +315,7 @@ margin: 2px;
     text-decoration: none;
     text-align: center;
     background-color: #6dbef8;
-    padding: 0.7%;
+    padding: 1%;
     border-top: 2px solid var(--borda);
   }footer a{
     text-decoration: none;
@@ -313,3 +332,75 @@ margin: 2px;
   .copy b{
     color: #ffa500;
   }
+
+
+  .lista-contatos {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.lista-contatos-bruno {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.item-contato {
+  margin: 0 5px;
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #140909;
+    border-radius: 5px;
+    background-color: #0497ff;
+
+    box-sizing: border-box;
+}
+
+.tipo-contato {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-contato {
+    display: block;
+}
+
+.link-github {
+    color: #791b1b;
+    font-size: 17px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link-github:hover {
+    text-decoration: underline;
+    color: #00ff33;
+}
+@media screen and (max-width: 767px) {
+    .info-contato {
+        display: block;
+        font-weight: 400;
+        font-size: 10px ;
+    }
+}
+
+.TITULO-PRINCIAL{
+  content: "";
+  font-size: 30px;
+  margin-bottom: 3%;
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: #010100;
+  font-family:monospace ;
+}
