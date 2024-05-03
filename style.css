@@ -1,6 +1,6 @@
   :root{
     --cor-tema: white;
-    --borda: black;
+    --borda: white;
   }
   
   *{
@@ -10,7 +10,8 @@
 
   body {
     text-align: center;
-    background: linear-gradient(180deg, #190349, #04b7f6);/*degrade de cor*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(180deg, #000000, hsl(228, 76%, 7%));/*degrade de cor*/
   }
 
   .cabecalho {
@@ -51,7 +52,7 @@
 
  
   .cabecalho-item{
-
+    font-family: cursive;
     animation: back 3s alternate;
     text-align: center;
     margin-top: 2% ;
@@ -70,23 +71,22 @@
  
   
   .cabecalho-item a{
-    
+    transition: all 0.1s ease-in-out;
     text-align: center;
     margin: 2% ;
     text-decoration: none;
     color: black;
-    font-family: cursive;
     padding: 0.6% 1.6%;
     margin: 1%;
-    border: 1%;
-    border: solid var(--borda);
+    border: 1px solid rgb(72, 67, 67);
     border-radius: 5px;
     background-color: #325487;
   }
    
   .cabecalho-item a:hover{
-    box-shadow:#00ffea 0 0 15px ;
+    box-shadow:#5bb3c4 -2px 2px 5px ;
     background:linear-gradient(140deg,#00d9ff 0%, #0084ff 50%,#023390 100%);
+    transform: scale(90%);
   }
 
 .foto-rangers{
@@ -109,6 +109,19 @@ margin: 2px;
   margin-bottom:1%;
   margin: 2px;
   }
+  @media screen and (max-width: 767px) {
+    .foto-rangers, .foto-rangers1
+    {
+      display:grid;
+      justify-content:center;
+      align-items:center;
+      grid-template-columns: 40%;
+      justify-self:left;
+      text-align:center;
+      margin-bottom:1%;
+      margin: 2px;
+      }
+  }
 
   .section-local{
     margin: 5%;
@@ -117,7 +130,7 @@ margin: 2px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid #171414;
+    border: 1px solid hsl(0, 16%, 94%);
     width: 90%;
   }
 
@@ -126,9 +139,8 @@ margin: 2px;
   font-size: 30px;
   display: block;
   text-align: center;
-  font-family: cursive;
   margin-top: 0.5%;
-  color: rgb(255, 133, 3);
+  color: rgb(247, 245, 242);
 }
 
 .section-local iframe{
@@ -143,22 +155,35 @@ h2{
   color: #000000;
 }
 .rangers{
-  border: 1.5px solid black;
+  font-family: cursive;
+  overflow: hidden;
+  border: 1.5px solid rgb(3, 16, 15);
   border-radius: 12px;
   margin: 8%;
-  background-color: #60a7e0;
-  padding: 0 -10px 0 -10px;
+  background-color: #083d69;
+  padding:10px;
+  transition: transform 0.4s ease-in-out;
+  position: relative;
+}
+
+.icone:hover{
+  border-bottom:1px solid black;
+}
+.rangers:hover{
+  box-shadow: grey -3px 3px 8px;
+  transform: translateY(-10px);
+  z-index: 10;
 }
 .fotos-rangers{
+  
   margin-top: 10px;
   border-bottom: 2px solid black;
 }
  
 .rangers .fotos-rangers{
-  background-color:orange;
   border: 2px solid black;
   border-radius:90%;
-  width:70%;
+  width:90%;
   transition: transform 0.5s ease-in-out;
   animation: fundo 0.3s infinite;
   animation-delay: 0.6s;
@@ -173,8 +198,8 @@ h2{
 }
 
 .icone{
-  margin-top: -11px;
-  border-radius: 50%;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
   background-color: transparent;
   width: 45px;
 }
@@ -192,11 +217,11 @@ h2{
     text-align: center;
     width: 76%;
     height: 20%;
+    background: linear-gradient(180deg, #000000, hsl(229, 96%, 9%));
     margin: 10px auto;
-    background-color: #ffffff;
+    
     padding: 20px;
-    border: 10px;
-    border: solid rgb(0, 0, 0);
+    border: 1px solid rgb(249, 247, 247);
     border-radius: 10px;
     margin-bottom: 2.5%;
     z-index: 4;
@@ -207,31 +232,29 @@ h2{
     width: 90%;
     height: 20%;
     margin: 10px auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border: 10px;
-    border: solid rgb(0, 0, 0);
+    background: linear-gradient(180deg, #000000, hsl(228, 97%, 11%));
+    border: 1px;
+    border: solid rgb(255, 234, 234);
     border-radius: 10px;
     margin-bottom: 2.5%;
     z-index: 4;
     color: #000000;
   }
 
-  section video{
-    background-color: skyblue;
-    border: 1%;
-    border: solid var(--borda);
+  .section-content video{
+    background-color: rgb(2, 21, 27);
+    border:2px  solid white;
     border-radius: 10px;
     width: 60%;
     text-align: center;
     transition: all 0.3s ease;
   }
 
-  section video:hover{
-    box-shadow: #000000 0 0 23px;
-    background: radial-gradient( #06568b 50%, #264288 100%) ;
+  .section-content video:hover{
+    box-shadow: #474646 0 0 33px;
+    background: radial-gradient( #031e31 10%, #051234 100%) ;
     border: 1%;
-    border: solid var(--borda);
+    border: solid white;
     border-radius: 10px;
     width: 60%;
     text-align: center;
@@ -239,8 +262,8 @@ h2{
     
   }
 
-  section img{
-    background-color: #80b1c3;
+  .section-content img{
+    background-color: rgb(2, 21, 27);
     margin-left: 1%;
     align-items: center;
     border: 2px;
@@ -252,8 +275,8 @@ h2{
   }
 
 
-  section img:hover {
-    background: radial-gradient( #4eeed9 50%, #264288 100%) ;
+  .section-content img:hover {
+    background: radial-gradient( #03053e 50%, #03174b 100%) ;
     margin-left: 1%;
     align-items: center;
     border: 2px;
@@ -267,13 +290,11 @@ h2{
 
   section h1{
     z-index: 5;
-    text-decoration:underline;
     font-size: 30px;
     display: block;
     text-align: center;
-    font-family: cursive;
-    margin-bottom: 1%;
-    color: rgb(0, 0, 0);
+    margin-bottom: 1.5%;  
+    color: #f9f6f6;
   }
 
   section h2{
@@ -282,7 +303,6 @@ h2{
     margin-right: 10%;
     transform: scale(1.1);
     text-align: center;
-    font-family: Cursive;
     color: rgb(99, 194, 99);
     font-size: 20px;
   }
@@ -298,25 +318,24 @@ h2{
 
   footer h2, h3{
     text-decoration: none; 
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 8px;
-    font-family: cursive;
   }
 
   footer h1 {
     text-decoration: none;
     font-size: 17px;
     color: #ffa500;
-    font-family: cursive;
   }
 
 
   footer{
     text-decoration: none;
     text-align: center;
-    background-color: #6dbef8;
+    background-color: #000304;
     padding: 1%;
-    border-top: 2px solid var(--borda);
+    margin-top: 4%;
+    border-top: 2px solid white;
   }footer a{
     text-decoration: none;
   }
@@ -361,7 +380,7 @@ h2{
     padding: 10px;
     border: 1px solid #140909;
     border-radius: 5px;
-    background-color: #0497ff;
+    background-color: #083d69;
 
     box-sizing: border-box;
 }
@@ -377,8 +396,8 @@ h2{
 }
 
 .link-github {
-    color: #791b1b;
-    font-size: 17px;
+    color: #f3efef;
+    font-size: 19px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -396,11 +415,31 @@ h2{
 }
 
 .TITULO-PRINCIAL{
-  content: "";
-  font-size: 30px;
-  margin-bottom: 3%;
+  content: "33";
+  font-size: 37px;
+  margin: 1% 0 1.5% 0;
   text-decoration: none;
   padding-bottom: 5px;
-  color: #010100;
-  font-family:monospace ;
+  color: #fdfdfc;
+}
+
+.inicio{
+  height: 50vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: 40% 40%;
+
+}
+
+.inicio img{
+  border-radius: 13px;
+  
+  width: 60%;
+}
+.inicio h3{
+  margin-left: -30%;
+  text-align: left;
+  width: 100%;
 }
