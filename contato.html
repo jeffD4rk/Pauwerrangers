@@ -8,6 +8,114 @@
     <title>Document</title>
 </head>
 
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    margin-left: 37%;
+    border-radius: 13px;
+    border: 2px solid white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #1d1d2e;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+section h2{
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+}
+
+/*Página do Obrigado*/
+
+.main{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: #101026;
+   flex-direction: column;
+}
+.text{
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    color: #f5f5f5;
+    margin-bottom: 50px;
+}
+.btn{
+    padding: 15px 55px;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: #101026;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    border-radius: 16px;
+}
+</style>
+
+
 <header id="inicio" class="cabecalho">
 
   <img class="logo-cabecalho" src="logo.png" width="40%">   <!--logo do site-->
@@ -21,107 +129,21 @@
 </header>
 
 <body>
-  
-    <section id="contato" class="section-content-contato">
-      <div class="container">
-        <h1 class="TITULO-PRINCIAL">contatos</h1>
+    <section>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
 
-            <h2 style="color: black;">Ranger Vermelho</h2>
-            <ul class="lista-contatos">
-
-                <li class="item-contato">
-                    <span class="tipo-contato">Instagram:</span>
-                    <a href="https://Instagram.com"  class="info-contato link-github">D4rk_jeff</a>
-                </li>
-
-                <li class="item-contato">
-                    <span class="tipo-contato">Email:</span>
-                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=eduardo.mello.anjos@escola.pr.gov.br&tf=cm"  class="info-contato link-github">Eduardo de Mello</a>
-                </li>
-                
-                <li class="item-contato">
-                    <span class="tipo-contato">GitHub:</span>
-                    <a href="https://github.com/jeffD4rk" class="link-github info-contato">jeff_D4rk</a>
-                </li>
-            </ul>
-
-            <h2 style="color: black;">Ranger amarelo</h2>
-            <ul class="lista-contatos">
-
-                <li class="item-contato">
-                    <span class="tipo-contato">Instagram:</span>
-                    <a href="https://www.instagram.com"  class="info-contato link-github">01_murilosrz</a>                
-                </li>
-
-                <li class="item-contato">
-                    <span class="tipo-contato">Email:</span>
-                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=murilo.ramos30@escola.pr.gov.br&tf=cm"  class="info-contato link-github">Murilo Ramos</a>
-                </li>
-
-                <li class="item-contato">
-                    <span class="tipo-contato">GitHub:</span>
-                    <a href="https://github.com/b1god" class="link-github info-contato">B1god</a>
-                </li>
-            </ul>
-
-
-            <h2 style="color: black;">Ranger Rosa</h2>
-            <ul class="lista-contatos">
-
-                <li class="item-contato">
-                    <span class="tipo-contato">instagram:</span>
-                    <a href="https://www.instagram." class="info-contato link-github">guh4706</a>
-                </li>
-
-                <li class="item-contato">
-                    <span class="tipo-contato">Email:</span>
-                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=oliveira.cruz.gustavo@escola.pr.gov.br&tf=cm"  class="info-contato link-github">Gustavo de Oliveira</a>
-                </li>
-
-                <li class="item-contato">
-                    <span class="tipo-contato">GitHub:</span>
-                    <a href="https://github.com/Gustavoo-1b" class="link-github info-contato">Gustavoo</a>
-                </li>
-            </ul>
-
-            <h2 style="color: black ;">Ranger Branco</h2>
-            <ul class="lista-contatos">
-
-                <li class="item-contato">
-                    <span class="tipo-contato">instagram:</span>
-                    <a href="https://www.instagram.com" class="info-contato link-github">043_nicolass</a>
-                </li>
-
-                <li class="item-contato">
-                    <span class="tipo-contato">Email:</span>
-                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=nicolas.alves.silva@escola.pr.gov.br&tf=cm" class="info-contato link-github">Nicolas Alves</a>
-                </li>
-
-                <li class="item-contato">
-                    <span class="tipo-contato">GitHub:</span>
-                    <a href="https://github.com/nicolasOmaisviado" class="link-github info-contato">nicolasOmaisviado</a>
-                </li>
-            </ul>
-
-            <h2 style="color: black;">Ranger azul</h2>
-            <ul class="lista-contatos-bruno">
-
-               
-
-                <li class="item-contato">
-                    <span class="tipo-contato">Email:</span>
-                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=souza.bruno09@escola.pr.gov.br&tf=cm" class="link-github info-contato">Bruno Kaue</a>
-                </li>
-                <span>  </span>
-                <li class="item-contato">
-                    <span class="tipo-contato">GitHub:</span>
-                    <a href="https://github.com/tropadavg" class="link-github info-contato">tropadavg</a>
-                </li>
-            </ul>
-      </div>
-  
-  
-  </section>
+            <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+        </form>
+    </section>
 </body>
 <footer>
   <a href="#inicio">
