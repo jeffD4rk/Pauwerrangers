@@ -15,9 +15,14 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.center-div{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 
 section{
-    margin-left: 37%;
+    
     border-radius: 13px;
     border: 2px solid white;
     text-align: center;
@@ -131,6 +136,7 @@ form button:hover{
 </header>
 
 <body>
+    <div class="center-div">
     <section>
         <h2>Contato</h2>
         <form action="https://api.staticforms.xyz/submit" method="post">
@@ -146,6 +152,7 @@ form button:hover{
             <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
         </form>
     </section>
+</div>
 </body>
 <footer>
   <a href="#inicio">
