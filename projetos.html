@@ -1,132 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pauwer Rangers</title>
-  <link rel="shortcut icon" type="imagex/png" href="aquivo-pdf.ico">
-   
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pauwer Rangers</title>
+    <meta name="theme-color" content="black" />
+    <link rel="shortcut icon" type="imagex/png" href="aquivo-pdf.ico" />
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  
 
+  <style>
+    #qr-code {
+      width: 150px;
+      display: none;
+      position: fixed;
+      top :1%;
+      z-index: 1;
+      right: 1%;
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header id="inicio" class="cabecalho">
+    }
+    #qr-hidden {
+      width: 150px;
+      z-index: 1;
+      display: block;
+      position: fixed;
+      top :1%;
+      right: 1%;
+    }
+    #relogioo {
+      z-index: 1;
+      display: block;
+      position: fixed;
+      top :2%;
+      left: 1%;
+      box-shadow: 0 0 20px black ;
+      font-size: 20px;
+      padding: 5px;
+      color: white;
+      background-color: black;
+      border: 1px solid white;
+      border-radius: 6px;
+    }
 
-    <img class="logo-cabecalho" src="logo.png" width="40%">   <!--logo do site-->
+    #navegaçao-de-btn{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-    <div class="cabecalho-item">
-      <a href="index.html" >início</a>
-      <a href="projetos.html">projetos</a>
-      <a href="contato.html" >contato</a>
-      <a href="quemsomos.html" >quem somos</a>  <!--links das paginas-->
+    @media screen and (max-width:767px) {
+      #qr-hidden {
+      z-index: 1;
+      width: 50px;
+      display: block;
+      position: fixed;
+      top :10%;
+      right: 1%;
+    }
+    #qr-code {
+      width: 120px;
+      display: none;
+      position: fixed;
+      top :2%;
+      z-index: 1;
+      right: 1%;
+
+    }
+    #qr-code:hover {
+      width: 120px;
+      display: none;
+      position: fixed;
+      top :2%;
+      z-index: 1;
+      right: 1%;
+      transform: scale(3) translatey(50px) translateX(-50px);
+    }
+    #relogioo {
+      display: block;
+      position: fixed;
+      top :2%;
+      left: 1%;
+      box-shadow: 0 0 20px black ;
+      font-size: 16px;
+      padding: 2px;
+      color: white;
+      background-color: black;
+      border: 1px solid white;
+      border-radius: 4px;
+    }
+    }
+    
+  
+    
+  </style>
+
+  <body onload="startTime()">
+    <script src="script.js"></script>
+
+    <h1 id="relogioo" ></h1>
+    <header id="inicio" class="cabecalho">
+      <div>
+        <img
+          onclick="codigoQr()"
+          class="logo-cabecalho"
+          src="logo.png"
+          width="40%"
+        />
+        <img id="qr-code" src="frame.png"/>
+      </div>
+      <div id="navegaçao-de-btn">
+      <div id="navegaçao" class="cabecalho-item">
+        <a href="index.html">início</a>
+        <a href="projetos.html">projetos</a>
+        <a href="contato.html">contato</a>
+        <a href="quemsomos.html">quem somos</a>
+        <!--links das paginas-->
+      </div>
     </div>
-  </header>
+    </header>
 
-  <section class="section-content">  <!--quadrado onde fica tudo do projeto-->
+    <section class="section-content">
+      <!--quadrado onde fica tudo do projeto-->
 
-      <h1>LED piscando</h1>  <!--titulo do projeto-->
-        
-        <!--video do projeto-->
-        <video width="640" height="360" controls>
-          <source src="led 1.mp4" type="video/mp4">
-        </video>
-
-        <div class="imagens-align">   <!--imagem dos projetos-->
-          <img src="led piscando1.png">
-          <img src="led piscando2.png">
-          <img src="led piscando1.png">
-        </div>
-
-      <h2>Descrição</h2>
-      <h3>Nesta aula, aprendemos como funciona o LED. Também vimos como fazer uso dos resistores, e utilizando esses dois componentes fizemos o LED piscar usando o Arduino.</h3>   <!--descrição do projeto-->
-
-      <div class="cabecalho-item">    <!--link do codigo de arduino do video-->
-        <a class="projetos-item" href="https://drive.google.com/drive/folders/1-gB-liaEuVp_DmGVslb0BihQKn2BdmOu" target="_blank">Aula</a>
-      </div>
-  </section>
-
-
-  <section class="section-content">   <!--quadrado onde fica tudo do projeto-->
-
-      <h1>Semaforo para carros</h1>   <!--titulo do projeto-->
-
-       <!--video do projeto-->
-      <video width="640" height="360" controls>
-        <source src="semafaro1.mp4" type="video/mp4">
-      </video>
-
-      <div class="imagens-align">   <!--imagem dos projetos-->
-        <img src="semaforro1.1.jpeg">
-        <img src="semaforo1.2.jpeg">
-        <img src="semaforo1.3.jpeg">
-      </div>
-
-      <h2>Descrição</h2>
-      <h3>Nesta aula nós usamos os leds e resistores que utilizamos anteriormente e usamos para fazer um semáforo com os leds alternando, e mudamos o Aula da placa Arduino.</h3>   <!--descrição do projeto-->
-
-      <div class="cabecalho-item">    <!--link do codigo de arduino do video-->
-        <a class="projeto-item" href="https://drive.google.com/drive/folders/18-Szse_nKanlyt-fPDg9mf8c3NGp58x6" target="_blank">Aula</a>
-      </div>
-  </section>
-
-
-  <section class="section-content">   <!--quadrado onde fica tudo do projeto-->
-
-      <h1>Semaforo para pedestres</h1>    <!--titulo do projeto-->
+      <h1>LED piscando</h1>
+      <!--titulo do projeto-->
 
       <!--video do projeto-->
       <video width="640" height="360" controls>
-        <source src="semaforo2.mp4" type="video/mp4">
+        <source src="led 1.mp4" type="video/mp4" />
       </video>
 
-      <div class="imagens-align">   <!--imagem dos projetos-->
-        <img src="semaforo para pedestres1.png">
-        <img src="semaforo para pedestres2.png">
-        <img src="semaforo para pedestres3.png">
+      <div class="imagens-align">
+        <!--imagem dos projetos-->
+        <img class="ft-projetos ft1" src="led piscando1.png" />
+        <img class="ft-projetos ft2" src="led piscando2.png" />
+        <img class="ft-projetos ft3" src="led piscando1.png" />
       </div>
 
       <h2>Descrição</h2>
-      <h3>Descrição do projeto de semáforo para pedestres.</h3>   <!--descrição do projeto-->
+      <h3>
+        Nesta aula, aprendemos como funciona o LED. Também vimos como fazer uso
+        dos resistores, e utilizando esses dois componentes fizemos o LED piscar
+        usando o Arduino.
+      </h3>
+      <!--descrição do projeto-->
 
-      <div class="cabecalho-item">    <!--link do codigo de arduino do video-->
-        <a class="projetos-item" href="https://drive.google.com/drive/folders/183wPqYtzS-4iFPOsVFQUvfOKybHDzH3b" target="_blank">Aula</a>
+      <div class="cabecalho-item">
+        <!--link do codigo de arduino do video-->
+        <a
+          class="projetos-item"
+          href="https://drive.google.com/drive/folders/1-gB-liaEuVp_DmGVslb0BihQKn2BdmOu"
+          target="_blank"
+          >Aula</a
+        >
       </div>
-  </section>
+    </section>
 
+    <section class="section-content">
+      <!--quadrado onde fica tudo do projeto-->
 
-  <section class="section-content">   <!--quadrado onde fica tudo do projeto-->
+      <h1>Semaforo para carros</h1>
+      <!--titulo do projeto-->
 
-      <h1>JoyStick + servo Motor</h1> <!--titulo do projeto-->
+      <!--video do projeto-->
+      <video width="640" height="360" controls>
+        <source src="semafaro1.mp4" type="video/mp4" />
+      </video>
+
+      <div class="imagens-align">
+        <!--imagem dos projetos-->
+        <img class="ft-projetos" src="semaforro1.1.jpeg" />
+        <img class="ft-projetos" src="semaforo1.2.jpeg" />
+        <img class="ft-projetos" src="semaforo1.3.jpeg" />
+      </div>
+
+      <h2>Descrição</h2>
+      <h3>
+        Nesta aula nós usamos os leds e resistores que utilizamos anteriormente
+        e usamos para fazer um semáforo com os leds alternando, e mudamos o Aula
+        da placa Arduino.
+      </h3>
+      <!--descrição do projeto-->
+
+      <div class="cabecalho-item">
+        <!--link do codigo de arduino do video-->
+        <a
+          class="projeto-item"
+          href="https://drive.google.com/drive/folders/18-Szse_nKanlyt-fPDg9mf8c3NGp58x6"
+          target="_blank"
+          >Aula</a
+        >
+      </div>
+    </section>
+
+    <section class="section-content">
+      <!--quadrado onde fica tudo do projeto-->
+
+      <h1>Semaforo para pedestres</h1>
+      <!--titulo do projeto-->
+
+      <!--video do projeto-->
+      <video width="640" height="360" controls>
+        <source src="semaforo2.mp4" type="video/mp4" />
+      </video>
+
+      <div class="imagens-align">
+        <!--imagem dos projetos-->
+        <img class="ft-projetos" src="semaforo para pedestres1.png" />
+        <img class="ft-projetos" src="semaforo para pedestres2.png" />
+        <img class="ft-projetos" src="semaforo para pedestres3.png" />
+      </div>
+
+      <h2>Descrição</h2>
+      <h3>Descrição do projeto de semáforo para pedestres.</h3>
+      <!--descrição do projeto-->
+
+      <div class="cabecalho-item">
+        <!--link do codigo de arduino do video-->
+        <a
+          class="projetos-item"
+          href="https://drive.google.com/drive/folders/183wPqYtzS-4iFPOsVFQUvfOKybHDzH3b"
+          target="_blank"
+          >Aula</a
+        >
+      </div>
+    </section>
+
+    <section class="section-content">
+      <!--quadrado onde fica tudo do projeto-->
+
+      <h1>JoyStick + servo Motor</h1>
+      <!--titulo do projeto-->
 
       <!--video do projeto-->
       <video width="640" height="290" controls>
-        <source src="video1.mp4" type="video/mp4">
+        <source src="video1.mp4" type="video/mp4" />
       </video>
 
-      <div class="imagens-align">   <!--imagem dos projetos-->
-        <img id="dir" src="foto1.jpg">
-        <img id="cent" src="foto2.jpg">
-        <img id="esq" src="foto3.jpg">
+      <div class="imagens-align">
+        <!--imagem dos projetos-->
+        <img class="ft-projetos" id="dir" src="foto1.jpg" />
+        <img class="ft-projetos" id="cent" src="foto2.jpg" />
+        <img class="ft-projetos" id="esq" src="foto3.jpg" />
       </div>
 
       <h2>Descrição</h2>
-      <h3>Nesta aula utilizamos o JoyStick para controlar os leds brancos o buzzer de som e os servo motores.</h3>    <!--descrição do projeto-->
+      <h3>
+        Nesta aula utilizamos o JoyStick para controlar os leds brancos o buzzer
+        de som e os servo motores.
+      </h3>
+      <!--descrição do projeto-->
 
-      <div class="cabecalho-item">    <!--link do codigo de arduino do video-->
-        <a class="projetos-item" href="https://aluno.escoladigital.pr.gov.br/sites/alunos/arquivos_restritos/files/documento/2023-08/aula19_joystick_shield_em_m2_v3.pdf" target="_blank">Aula</a>
+      <div class="cabecalho-item">
+        <!--link do codigo de arduino do video-->
+        <a
+          class="projetos-item"
+          href="https://aluno.escoladigital.pr.gov.br/sites/alunos/arquivos_restritos/files/documento/2023-08/aula19_joystick_shield_em_m2_v3.pdf"
+          target="_blank"
+          >Aula</a
+        >
       </div>
-  </section>
-
-  <footer>
-    <a href="#inicio">
-      <div class="copy">
-        <div>
-          <h1>&copy;<b>Pauwer Rangers</b></h1>
-          <h2>Projetos de robótica / 2024</h2>
+    </section>
+    
+    <footer>
+      <a href="#inicio">
+        <div id="slaaa" class="copy">
+          <div>
+            <h1>&copy;<b>Pauwer Rangers</b></h1>
+            <h2>Projetos de robótica / 2024</h2>
+          </div>
         </div>
-      </div>
-    </a>
-  </footer>
+      </a>
+    </footer>
+  </body>
   
-       
+</html>

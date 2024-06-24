@@ -8,17 +8,29 @@
   <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="startTime()">
+  <script src="script.js"></script>
+
+  <h1 id="relogioo" ></h1>
   <header id="inicio" class="cabecalho">
-
-    <img class="logo-cabecalho" src="logo.png" width="40%">   <!--logo do site-->
-
-    <div class="cabecalho-item">
+    <div>
+      <img
+        onclick="codigoQr()"
+        class="logo-cabecalho"
+        src="logo.png"
+        width="40%"
+      />
+      <img id="qr-code" src="frame.png"/>
+    </div>
+    <div id="navegaçao-de-btn">
+    <div id="navegaçao" class="cabecalho-item">
       <a href="index.html">início</a>
       <a href="projetos.html">projetos</a>
       <a href="contato.html">contato</a>
-      <a href="quemsomos.html">quem somos</a>  <!--links das paginas-->
+      <a href="quemsomos.html">quem somos</a>
+      <!--links das paginas-->
     </div>
+  </div>
   </header>
   <section class="inicio">
     <img onclick="robo()" src="robozinho.jpeg">
