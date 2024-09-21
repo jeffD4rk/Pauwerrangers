@@ -9,10 +9,10 @@
   <link rel="shortcut icon" type="image/png" href="aquivo-pdf.ico" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Estilos para as seções */
+    
     .section-content {
-      opacity: 0; /* Inicia invisível */
-      transition: opacity 0.5s; /* Transição suave da opacidade */
+      opacity: 0;
+      transition: opacity 0.5s; 
     }
   </style>
 </head>
@@ -20,7 +20,7 @@
 <body>
   <header class="cabecalho">
     <div>
-      <img onclick="codigoQr()" class="logo-cabecalho" src="https://www.freepnglogos.com/uploads/red-netflix-logo-text-png-3.png" />
+      <img onclick="codigoQr()" class="logo-cabecalho" src="logo.png" />
       <img id="qr-code" src="frame.png" />
     </div>
     <div id="navegaçao-de-btn">
@@ -33,14 +33,12 @@
     </div>
   </header>
 
-  <!-- Seções do projeto -->
+  
   <section class="section-content">
-    <!--quadrado onde fica tudo do projeto-->
+    
 
     <h1>LED piscando</h1>
-    <!--titulo do projeto-->
-
-    <!--video do projeto-->
+    
     <video width="640" height="360" controls>
       <source src="led 1.mp4" type="video/mp4" />
     </video>
@@ -162,7 +160,7 @@
     </div>
   </section>
 
-  <!-- Adicione outras seções aqui, seguindo o mesmo formato -->
+  
 
   <footer>
     <a href="#inicio">
@@ -179,23 +177,23 @@
     const sections = document.querySelectorAll('.section-content');
 
     const options = {
-      root: null, // Usar a viewport como root
+      root: null, 
       rootMargin: '0px',
-      threshold: 0.5 // Quando 10% do elemento estiver visível
+      threshold: 0.5 
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.style.opacity = 1; // Mudar a opacidade para 1 quando visível
+          entry.target.style.opacity = 1;
         } else {
-          entry.target.style.opacity = 0; // Mudar a opacidade de volta quando não visível
+          entry.target.style.opacity = 0; 
         }
       });
     }, options);
 
     sections.forEach(section => {
-      observer.observe(section); // Começar a observar cada seção
+      observer.observe(section);
     });
   </script>
 </body>
